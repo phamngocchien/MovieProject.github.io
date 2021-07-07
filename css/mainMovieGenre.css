@@ -1,0 +1,321 @@
+:root {
+  --white-color: #fff;
+  --header-color: #0c2738;
+  --primary-color: #081b27;
+  --vote-color: #f1b722;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Nunito", sans-serif;
+}
+/* .grid {
+  max-width: 1000px;
+  margin: 0 auto;
+} */
+
+/*Header*/
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 80px;
+  background: var(--header-color);
+}
+.header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  position: relative;
+}
+.header__logo {
+  margin-right: 100px;
+}
+.header__logo-icon {
+  font-size: 30px;
+}
+.header__logo a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+.header__logo-icon i {
+  color: var(--vote-color);
+  cursor: pointer;
+}
+/*header menu start*/
+.header__menu-icon {
+  display: none;
+  position: absolute;
+  left: -6%;
+}
+.header__menu-icon i {
+  font-size: 28px;
+  color: var(--vote-color);
+}
+.header__menu {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 270px;
+  height: 100%;
+  background-color: var(--header-color);
+  transform: translateX(-100%);
+  transition: transform linear 0.3s;
+}
+.header__menu-overlay {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  animation: fadeIn linear 0.3s;
+}
+.header__menu-closed {
+  margin-right: 10px;
+  font-size: 35px;
+  color: var(--vote-color);
+  float: right;
+}
+.header__menu-list {
+  margin-top: 65px;
+  text-align: center;
+}
+.header__menu-search {
+  padding: 25px 12px;
+  border-bottom: solid 1px rgb(175 175 175);
+  display: flex;
+  align-items: center;
+}
+.menu-search-input {
+  outline: none;
+  padding: 10px;
+  border-radius: 17px;
+  width: 100%;
+  border: solid 1px rgb(175 175 175);
+}
+.menu-btn {
+  line-height: 15px;
+  border: none;
+  background-color: var(--white-color);
+  margin-left: -30px;
+}
+.menu-btn i {
+  font-size: 18px;
+}
+.header__menu-item {
+  padding: 15px;
+  border-bottom: solid 1px rgb(175 175 175);
+}
+.header__menu-item a {
+  font-size: 24px;
+  text-decoration: none;
+  color: var(--white-color);
+}
+.checked-show:checked ~ .header__menu-overlay {
+  display: block;
+}
+
+.checked-show:checked ~ .header__menu {
+  transform: translateX(0);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*header menu end*/
+.header__search {
+  display: flex;
+  align-items: center;
+  width: 700px;
+  flex: 1;
+}
+.header__search input[type="text"] {
+  font-size: 18px;
+}
+.header__search-input {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.header__search-input::placeholder {
+  font-size: 16px;
+}
+.header__search-btn {
+  margin-left: -44px;
+  font-size: 25px;
+  background: transparent;
+  border: none;
+  font-weight: 800;
+}
+.header__search-btn i {
+  color: #b1b0b0;
+  padding: 8px;
+  cursor: pointer;
+}
+.header__moviegenre {
+  background-color: #323031;
+}
+.header__moviegenre-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  height: 35px;
+}
+.moviegenre-list-item {
+  margin: auto 0;
+  border-bottom: 0px solid var(--vote-color);
+  border-radius: 2px;
+}
+.moviegenre--underline {
+  border-bottom: 3px solid var(--vote-color);
+  transition: border-bottom 0.2s ease;
+}
+.moviegenre-list-item a {
+  color: var(--white-color);
+  text-decoration: none;
+  margin: 0 16px;
+  text-transform: uppercase;
+  transition: color 0.6s;
+  height: 37px;
+  cursor: pointer;
+}
+.moviegenre-list-item a:hover {
+  color: #fcff68f5;
+}
+
+/*Slide*/
+.container {
+  margin-top: 115px;
+  background-color: var(--primary-color);
+}
+/* Movies */
+.Movies {
+  background: var(--primary-color);
+  margin: 0px auto;
+  display: flex;
+  padding-top: 80px;
+}
+.Movies-content {
+  display: flex;
+  padding-bottom: 100px;
+}
+.Movies_newSeries {
+}
+.Movies__wrapper {
+  display: flex;
+  justify-content: center;
+}
+.Movies__wrapper-title {
+  font-size: 40px;
+  color: var(--vote-color);
+}
+
+/*Movies list*/
+.Movies_newSeries {
+}
+.Movies_newSeries-list {
+  display: flex;
+  margin-top: 22px;
+  -webkit-flex-wrap: wrap;
+  justify-content: center;
+}
+.Movies_newSeries-item {
+  width: 190px;
+  margin: 20px 60px 30px 0;
+  position: relative;
+  cursor: pointer;
+}
+.Movies_newSeries-item__img {
+  padding-top: 150%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+  box-shadow: 1px 1px 3px 0 rgb(0 0 0 / 40%);
+  transition: all 0.3s;
+}
+.Movies_newSeries-item__img:hover {
+  opacity: 0.8;
+}
+.Movies_newSeries-item__info {
+  position: absolute;
+  bottom: 4%;
+  padding: 8px 17px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+.Movies_newSeries-item__title {
+  color: #ff8040;
+  font-size: 15px;
+  text-transform: uppercase;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.Movies_newSeries-item__detail {
+  color: var(--white-color);
+  font-size: 12px;
+}
+
+/* Track */
+.Movies_newSeris-category__list::-webkit-scrollbar-track {
+  background: #0c222f;
+  border-radius: 6px;
+}
+
+/* Handle */
+.Movies_newSeris-category__list::-webkit-scrollbar-thumb {
+  background: #666666;
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+.Movies_newSeris-category__list::-webkit-scrollbar-thumb:hover {
+  background: #464646;
+}
+/*Footer*/
+.footer {
+  display: block;
+  height: 110px;
+  background: var(--header-color);
+  text-align: center;
+  border-top: solid 1px var(--vote-color);
+}
+.footer-logo {
+  font-size: 30px;
+  padding: 10px 0;
+  text-decoration: none;
+}
+.footer-logo a {
+  text-decoration: none;
+}
+.footer-logo__icon div {
+  color: var(--vote-color);
+  margin-left: 10px;
+}
+.footer-logo__icon span {
+  color: var(--white-color);
+}
+
+.footer-slogan {
+  font-size: 20px;
+  color: var(--white-color);
+}

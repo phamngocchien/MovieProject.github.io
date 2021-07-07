@@ -1,0 +1,137 @@
+@media (max-width: 1024px) {
+  .hide-on-tablet {
+    display: none;
+  }
+  body::-webkit-scrollbar {
+    width: 6px;
+    height: 15px;
+  }
+
+  /* Track */
+  body::-webkit-scrollbar-track {
+    background: #0c222f;
+  }
+
+  /* Handle */
+  body::-webkit-scrollbar-thumb {
+    background: #666666;
+    border-radius: 6px;
+  }
+
+  /* Handle on hover */
+  body::-webkit-scrollbar-thumb:hover {
+    background: #464646;
+  }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .wide {
+    width: 644px;
+  }
+  .m-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  .header {
+    height: 60px;
+  }
+  .header__search {
+    display: none;
+  }
+  .header__logo {
+    margin-right: 0;
+  }
+  .header__moviegenre {
+    display: none;
+  }
+  .container {
+    margin-top: 60px;
+  }
+  .header__menu-icon {
+    display: block;
+  }
+  .Movies__wrapper-title {
+    font-size: 26px;
+  }
+}
+@media (max-width: 739px) {
+  .wide-on-mobile {
+    width: 600px;
+    margin: 0 auto; /* tự động căn ra giữa */
+  }
+  .grid.wide {
+    max-width: 739px;
+    margin: 0 auto; /* tự động căn ra giữa */
+  }
+  .slideMovie__list-item--img {
+    padding-top: 280px;
+  }
+  .list-item--title {
+    font-size: 12px;
+  }
+  .list-item--detail {
+    font-size: 10px;
+  }
+  .Movies_newSeries-item__title {
+    font-size: 12px;
+  }
+  .mobile-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .mobile-2 {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+  .header {
+    height: 60px;
+  }
+  .header__search {
+    display: none;
+  }
+  .header__logo {
+    margin-right: 0;
+  }
+  .header__moviegenre {
+    display: none;
+  }
+  .container {
+    margin-top: 60px;
+  }
+  .header__menu {
+    width: 230px;
+  }
+  .header__menu-icon {
+    display: block;
+  }
+  .Movies {
+    padding-top: 50px;
+  }
+  .Movies-content {
+    padding-bottom: 50px;
+  }
+  .Movies__wrapper-btn {
+    display: none;
+  }
+  .Movies__wrapper-title {
+    font-size: 24px;
+  }
+  .header__menu-icon {
+    left: 3%;
+  }
+  .header__menu-icon i {
+    font-size: 20px;
+    color: var(--vote-color);
+  }
+  .header__menu-item a {
+    font-size: 20px;
+  }
+  .footer {
+    height: 70px;
+  }
+  .footer-logo {
+    font-size: 18px;
+  }
+  .footer-slogan {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fronts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/mainFilmDetails.css">
+    <link rel="stylesheet" href="./css/responsiveFilmDetails.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./js/mainFilmDetails.js">
+    <title>Film Detail</title>
+</head>
+<body>
+    <div class="app">
+        <header class="header ">
+            <div class="header-wrap row grid wide">
+                <label class="header__menu-icon" for="show">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <div class="header__logo">
+                    <a href="#" class="header__logo-icon">
+                        <i class="fas fa-film"></i>
+                        <span>Film Channel</span>
+                    </a>
+                </div>
+                <div class="header__search">
+                    <input type="text" class="header__search-input" placeholder="Tìm kiếm ..." >
+                    <button class="header__search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="header__moviegenre">
+                <ul class="header__moviegenre-list">
+                    <li class="moviegenre-list-item moviegenre--underline">
+                        <a href="#"> Trang chủ</a>
+                    </li>
+                    <li class="moviegenre-list-item">
+                        <a href="./MovieGenre.html"> Phim mới</a>
+                    </li>
+                    <li class="moviegenre-list-item">
+                        <a href="./MovieGenre.html"> Phim lẻ</a>
+                    </li>
+                    <li class="moviegenre-list-item">
+                        <a href="./MovieGenre.html"> Phim bộ</a>
+                    </li>
+                    <li class="moviegenre-list-item">
+                        <a href="./MovieGenre.html"> Phim hoạt hình</a>
+                    </li>
+                    <li class="moviegenre-list-item">
+                        <a href="./MovieGenre.html"> Phim chiếu rạp</a>
+                    </li>
+                </ul>
+            </div>
+
+            <input type="checkbox" hidden class="checked-show" id="show">
+            <label class="header__menu-overlay" for="show"></label>
+            <label class="header__menu">
+                <label class="header__menu-closed" for="show">
+                    <i class="fas fa-times"></i>
+                </label>
+                <ul class="header__menu-list">
+                    <li class="header__menu-search">
+                        <input type="text" class="menu-search-input" placeholder="Tìm kiếm ..." >
+                        <button class="menu-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#">Trang chủ</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="./MovieGenre.html">Phim mới</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="./MovieGenre.html">Phim lẻ</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="./MovieGenre.html">Phim bộ</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="./MovieGenre.html">Phim hoạt hình</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="./MovieGenre.html">Phim chiếu rạp</a>
+                    </li>
+                </ul>
+            </label>
+            
+        </header>
+        <div class="app__container">
+            <div class="grid">
+                <div class="app__content">
+                    <section class="movie__info">
+                        <div style="background-image: url(https://nld.mediacdn.vn/2019/4/25/3515432-endgamedek-15561710302491765206118.jpg);" class="movie__content-img">
+                            <div class="movie__content-overlay"></div>
+                                <div class="movie__info-wrapper">
+                                    <div class="movie__info-img">
+                                        <img src="./img/imgFilmDetail/poster/avg-endgame.jpg" alt="">
+                                    </div>
+                                    <div class="movie__info-details">
+                                        
+                                        <h1 class="movie__info-details-title">Avengers: Endgame</h1>
+                                        <div class="movie__info-details-moviegenre">
+                                            <a href="" >Phim chiếu rạp</a>
+                                        </div>
+                                        
+                                        <div class="movie__info-details-btn">  
+                                            <a class="details-btn-trailer btn" href="#trailer">Trailer</a>
+                                            <a class="details-btn-watch btn" href="./WatchMovie.html">Xem phim</a>
+                                         </div>
+                                        <p>
+                                            Thời lượng: 120 phút<br>
+                                            Năm sản xuất: 2020<br>
+                                            Ngày công chiếu: 11/05/2020<br>
+                                            Quốc gia: America<br>
+                                            Thể loại: Phim chiếu rạp<br>
+                                            Đạo diễn: Joe Russo, Anthony Russo<br>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="movie__review">
+                        <div class="grid wide">
+
+                            <div class="movie__review-name">Avengers: Endgame</div>
+                            <p class="movie__review-info">
+                                Với những đặc tính đã thành công thức kỹ xảo hoành tráng sướng mắt đã tai đến từ kinh phí sản xuất khổng lồ, lối kể chuyện đơn giản và chiều lòng fan hâm mộ, cùng đội quân siêu anh hùng được thủ diễn bởi những ngôi sao sáng nhất của Hollywood, vũ trụ điện ảnh Marvel đã tạo ra một cỗ máy in tiền thống trị ngành công nghiệp điện ảnh của Hollywood trong hơn một thập kỷ.
+                                Biểu tượng thành công cho công thức này chắc chắn là loạt phim The Avengers, với phần đầu tiên được ra mắt vào năm 2012. Những nhân vật siêu anh hùng được giới thiệu trước đó qua những phần phim lẻ được tập hợp lại để cứu thế giới. 
+                                Nếu ở phần phim đầu tiên (2012), biệt đội Avengers phải sát cánh để chống lại tộc Chitauri được đem tới Trái Đất bởi vị thần xảo quyệt Loki, ở phần 2 (2015) là Ultron, cỗ máy huỷ diệt đến từ ngoài vũ trụ, thì ở phần tiếp theo Infinity War (2018), họ phải cùng nhau hợp lực để ngăn cản tên khổng lồ Thanos với sức mạnh vô tiền khoáng hậu từ những viên đá vô cực. 
+                                Và cũng chính trong phần này, Marvel gây sốc cho các fan của mình khi xoá sổ hàng loạt những nhân vật được yêu thích: Người Kiến Antman, chiến binh báo đen Black Panther, Doctor Strange, Spider-Man… 
+                                Chính bước đi vô cùng táo bạo ấy đã đẩy sức hấp dẫn của The Avengers: Endgame, phần cuối cùng của loạt phim với thế hệ siêu anh hùng hiện tại - lên đến đỉnh điểm.
+                            </p>
+                            <h1 id="trailer" class="movie__official-trailer">Official trailer</h1>
+                            <iframe  src="https://www.youtube.com/embed/6ZfuNTqbHE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        
+                        </div>
+                        
+                    </section>
+                    </div>
+                    <section class="movie__suggest">
+                        <div class="grid wide">
+                            <h1 class="movie__suggest-title">CÓ THỂ BẠN CŨNG MUỐN XEM</h1>
+                            <div class="movie__suggest-list">
+                                <a class="movie__suggest-item ">
+                                    <div class="movie__suggest-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="movie__suggest-item__info">
+                                            <div class="movie__suggest-item__title">Bán Đảo Peninsula</div>
+                                            <p class="movie__suggest-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                                <a class="movie__suggest-item ">
+                                    <div class="movie__suggest-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/dai-uy-marve-2019.jpg);"></div>
+                                    <div class="movie__suggest-item__info">
+                                            <div class="movie__suggest-item__title">Bán Đảo Peninsula</div>
+                                            <p class="movie__suggest-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>                        
+                                <a class="movie__suggest-item ">
+                                    <div class="movie__suggest-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="movie__suggest-item__info">
+                                            <div class="movie__suggest-item__title">Bán Đảo Peninsula</div>
+                                            <p class="movie__suggest-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>                        
+    
+                            </div>
+                        </div>
+                    </section>
+                </div>  
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-logo">
+                <a href="#" class="footer-logo__icon">
+                    <div class="fas fa-film"></div>
+                    <span>Film Channel</span>
+                </a>
+            </div>
+            <span class="footer-slogan">Siêu Nhanh - Siêu nét - Siêu chuẩn</span>
+        </footer>
+    </div>
+</body>
+</html>

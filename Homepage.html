@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./fronts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/mainHomepage.css">
+    <link rel="stylesheet" type="text/css" href="./css/grid.css">
+    <link rel="stylesheet" type="text/css" href="./css/responsiveHomepage.css">
+    <link rel="stylesheet" type="text/css" href="./js/mainHomepage.js" type="text/js">
+    <title>Movie Project</title>
+</head>
+<body>
+    <div class="loader">
+        <div class="loader-icon"></div>
+    </div>
+    <div class="app">
+        <header class="header ">
+            <div class="header-wrap row grid wide">
+                <label class="header__menu-icon" for="show">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <div class="header__logo">
+                    <a href="#" class="header__logo-icon">
+                        <i class="fas fa-film"></i>
+                        <span>Film Channel</span>
+                    </a>
+                </div>
+                <div class="header__search">
+                    <input type="text" class="header__search-input" placeholder="Tìm kiếm ..." >
+                    <button class="header__search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="header__moviegenre">
+                <ul class="header__moviegenre-list">
+                    <li class="moviegenre-list-item moviegenre--underline">
+                        <a href="#"> Trang chủ</a>
+                    </li>
+                    <li class="moviegenre-list-item">
+                        <a href="./MovieGenre.html"> Phim mới</a>
+                    </li>
+                    <li class="moviegenre-list-item">
+                        <a href="./MovieGenre.html"> Phim lẻ</a>
+                    </li>
+                    <li class="moviegenre-list-item">
+                        <a href="./MovieGenre.html"> Phim bộ</a>
+                    </li>
+                    <li class="moviegenre-list-item">
+                        <a href="./MovieGenre.html"> Phim hoạt hình</a>
+                    </li>
+                    <li class="moviegenre-list-item">
+                        <a href="./MovieGenre.html"> Phim chiếu rạp</a>
+                    </li>
+                </ul>
+            </div>
+
+            <input type="checkbox" hidden class="checked-show" id="show">
+            <label class="header__menu-overlay" for="show"></label>
+            <label class="header__menu">
+                <label class="header__menu-closed" for="show">
+                    <i class="fas fa-times"></i>
+                </label>
+                <ul class="header__menu-list">
+                    <li class="header__menu-search">
+                        <input type="text" class="menu-search-input" placeholder="Tìm kiếm ..." >
+                        <button class="menu-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#">Trang chủ</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="./MovieGenre.html">Phim mới</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="./MovieGenre.html">Phim lẻ</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="./MovieGenre.html">Phim bộ</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="./MovieGenre.html">Phim hoạt hình</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="./MovieGenre.html">Phim chiếu rạp</a>
+                    </li>
+                </ul>
+            </label>
+            
+        </header>
+        <div class="container">
+            <section class="slidesMovie">
+                <nav class="slideMovie__taskbar wide-tabletlow">
+                    <div class="slideMovie__list l-2-4 m-4 mobile-4  first">
+                        <a href="./FilmDetails.html" class="slideMovie__list-item ">
+                            <div class="slideMovie__list-item--img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/ban-dao-peninsula-poster.jpeg);">
+                                <div class="slideMovie__list-item--info">
+                                    <h1 class="list-item--title">bán đảo peninsula</h1>
+                                    <p class="list-item--detail">Train to Busan 2 (2020)</p>
+                                </div>                       
+                            </div>                      
+                        </a>
+                    </div>
+                    <div class="slideMovie__list l-2-4 m-4 mobile-4 ">
+                        <a href="./FilmDetails.html" class="slideMovie__list-item ">
+                            <div class="slideMovie__list-item--img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/Captain-America-noi-chien-sieu-anh-hung-2016.jpg);">
+                                <div class="slideMovie__list-item--info">
+                                    <h1 class="list-item--title">Captain America nội chiến siêu anh hùng 2016</h1>
+                                    <p class="list-item--detail">Captain America: Civil War (2016)</p>
+                                </div>                       
+                            </div>                       
+                        </a>
+                    </div>
+                    <div class="slideMovie__list l-2-4 m-4 mobile-4 ">
+                        <a href="./FilmDetails.html" class="slideMovie__list-item ">
+                            <div class="slideMovie__list-item--img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/Captain-America2-poster.jpg);">
+                                <div class="slideMovie__list-item--info">
+                                    <h1 class="list-item--title">Captain America 2</h1>
+                                    <p class="list-item--detail">Captain America: The Winter Soldier (2014)</p>
+                                </div>                       
+                            </div>                      
+                        </a>
+                    </div>
+                    <div class="slideMovie__list l-2-4 m-4 mobile-4 ">
+                        <a href="./FilmDetails.html" class="slideMovie__list-item ">
+                            <div class="slideMovie__list-item--img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/dai-uy-marve-2019.jpg);">
+                                <div class="slideMovie__list-item--info">
+                                    <h1 class="list-item--title">đại úy marvel</h1>
+                                    <p class="list-item--detail">Captain Marvel (2019)</p>
+                                </div>                       
+                            </div>
+                            
+                        </a>
+                    </div>
+                    <div class="slideMovie__list l-2-4 m-4 mobile-4 ">
+                        <a href="./FilmDetails.html" class="slideMovie__list-item ">
+                            <div class="slideMovie__list-item--img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/Godzilla-vs-Kong-poster.jpg);">
+                                <div class="slideMovie__list-item--info">
+                                    <h1 class="list-item--title">godzilla đại chiến kong</h1>
+                                    <p class="list-item--detail">Godzilla vs. Kong (2021)</p>
+                                </div>                       
+                            </div>                       
+                        </a>
+                    </div>
+                    <div class="slideMovie__list l-2-4 m-4 mobile-4 "  >
+                        <a href="./FilmDetails.html" class="slideMovie__list-item ">
+                            <div class="slideMovie__list-item--img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);">
+                                <div class="slideMovie__list-item--info">
+                                    <h1 class="list-item--title">Tân phong thần: Na Tra trùng sinh</h1>
+                                    <p class="list-item--detail">New Gods: Nezha Reborm (2021)</p>
+                                </div>                       
+                            </div>                       
+                        </a>
+                    </div>
+                    <div class="slideMovie__list l-2-4 m-4 mobile-4 ">
+                        <a href="./FilmDetails.html" class="slideMovie__list-item ">
+                            <div class="slideMovie__list-item--img" style="background-image: url(https://phimmoiplus.net.net/wp-content/uploads/2021/04/phim-chien-binh-bao-den-poster.jpg);">
+                                <div class="slideMovie__list-item--info">
+                                    <h1 class="list-item--title">Chiến binh báo đen</h1>
+                                    <p class="list-item--detail">Black Panther (2018)</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="slideMovie__list l-2-4 m-4 mobile-4 ">
+                        <a href="./FilmDetails.html" class="slideMovie__list-item ">
+                            <div class="slideMovie__list-item--img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/Captain-America-poster.jpg);">
+                                <div class="slideMovie__list-item--info">
+                                    <h1 class="list-item--title">CAPTAIN AMERICA:KẺ BÁO THÙ ĐẦU TIÊN</h1>
+                                    <p class="list-item--detail">CAPTAIN AMERICA: THE FIRST AVENGER (2011)</p>
+                                </div></div>
+                        </a>
+                    </div>
+                    <div class="slideMovie__list l-2-4 m-4 mobile-4 ">
+                        <a href="./FilmDetails.html" class="slideMovie__list-item ">
+                            <div class="slideMovie__list-item--img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/03/raya-va-rong-than-cuoi-cung.jpg);">
+                                <div class="slideMovie__list-item--info">
+                                    <h1 class="list-item--title">Raya và rồng thần cuối cùng</h1>
+                                    <p class="list-item--detail">RaYa And The Last Dragon (2021)</p>
+                                </div>
+                            </div>                        
+                        </a>
+                    </div>
+                    <div class="slideMovie__list l-2-4 m-4 mobile-4 ">
+                        <a href="./FilmDetails.html" class="slideMovie__list-item ">
+                            <div class="slideMovie__list-item--img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/01/truy-cung-giet-tan-2020.jpg);">
+                                <div class="slideMovie__list-item--info">
+                                    <h1 class="list-item--title">Truy cùng diệt tận</h1>
+                                    <p class="list-item--detail">Deliver Us from Evil (2021)</p>
+                                </div>                       
+                            </div>
+                            
+                        </a>
+                    </div>
+                </nav>
+
+            </section>
+            <section class="Movies">
+                <div class="grid wide">
+                    <div class="Movies-content">
+                        <div class="Movies_newSeries wide-on-table">
+                            <div class="Movies__wrapper">
+                                <h2 class="Movies__wrapper-title">Phim Mới</h2>
+                                <div class="Movies__wrapper-btn">
+                                    <div class="btn--white">Tất cả phim</div>
+                                    <div>Sắp chiếu</div>
+                                    <div>Phim mới</div>
+                                </div>
+                            </div>
+                            <div class="Movies_newSeries-list ">
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/dai-uy-marve-2019.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>                        
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>                        
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                            </div>
+                        </div>
+                        <div class="Movies_newSeris-category hide-on-tablet">
+                            <div class="Movies_newSeris-category__title">Phim Viễn Tưởng</div>
+                            <div class="Movies_newSeris-category__list">
+                                <a class="Movies_newSeris-category__listItem">
+                                    <img class="Category__listItem--img" src="./img/imgHomePage/dai-uy-marve-2019.jpg" alt="">
+                                    <div class="Category__listItem--info">
+                                        <h1 class="Category__list-item--title">Truy cùng diệt tận</h1>
+                                        <p class="Category__list-item--detail">Deliver Us from Evil (2021)</p>
+                                    </div>                       
+                                </a>
+                                <a class="Movies_newSeris-category__listItem">
+                                    <img class="Category__listItem--img" src="./img/imgHomePage/dai-uy-marve-2019.jpg" alt="">
+                                    <div class="Category__listItem--info">
+                                        <h1 class="Category__list-item--title">Truy cùng diệt tận</h1>
+                                        <p class="Category__list-item--detail">Deliver Us from Evil (2021)</p>
+                                    </div>                       
+                                </a>
+                                <a class="Movies_newSeris-category__listItem">
+                                    <img class="Category__listItem--img" src="./img/imgHomePage/dai-uy-marve-2019.jpg" alt="">
+                                    <div class="Category__listItem--info">
+                                        <h1 class="Category__list-item--title">Truy cùng diệt tận</h1>
+                                        <p class="Category__list-item--detail">Deliver Us from Evil (2021)</p>
+                                    </div>                       
+                                </a>
+                                <a class="Movies_newSeris-category__listItem">
+                                    <img class="Category__listItem--img" src="./img/imgHomePage/dai-uy-marve-2019.jpg" alt="">
+                                    <div class="Category__listItem--info">
+                                        <h1 class="Category__list-item--title">Truy cùng diệt tận</h1>
+                                        <p class="Category__list-item--detail">Deliver Us from Evil (2021)</p>
+                                    </div>                       
+                                </a>
+                                <a class="Movies_newSeris-category__listItem">
+                                    <img class="Category__listItem--img" src="./img/imgHomePage/dai-uy-marve-2019.jpg" alt="">
+                                    <div class="Category__listItem--info">
+                                        <h1 class="Category__list-item--title">Truy cùng diệt tận</h1>
+                                        <p class="Category__list-item--detail">Deliver Us from Evil (2021)</p>
+                                    </div>                       
+                                </a>
+                                <a class="Movies_newSeris-category__listItem">
+                                    <img class="Category__listItem--img" src="./img/imgHomePage/dai-uy-marve-2019.jpg" alt="">
+                                    <div class="Category__listItem--info">
+                                        <h1 class="Category__list-item--title">Truy cùng diệt tận</h1>
+                                        <p class="Category__list-item--detail">Deliver Us from Evil (2021)</p>
+                                    </div>                       
+                                </a>
+                                <a class="Movies_newSeris-category__listItem">
+                                    <img class="Category__listItem--img" src="./img/imgHomePage/dai-uy-marve-2019.jpg" alt="">
+                                    <div class="Category__listItem--info">
+                                        <h1 class="Category__list-item--title">Truy cùng diệt tận</h1>
+                                        <p class="Category__list-item--detail">Deliver Us from Evil (2021)</p>
+                                    </div>                       
+                                </a>
+                                <a class="Movies_newSeris-category__listItem">
+                                    <img class="Category__listItem--img" src="./img/imgHomePage/dai-uy-marve-2019.jpg" alt="">
+                                    <div class="Category__listItem--info">
+                                        <h1 class="Category__list-item--title">Truy cùng diệt tận</h1>
+                                        <p class="Category__list-item--detail">Deliver Us from Evil (2021)</p>
+                                    </div>                       
+                                </a>
+                                <a class="Movies_newSeris-category__listItem">
+                                    <img class="Category__listItem--img" src="./img/imgHomePage/dai-uy-marve-2019.jpg" alt="">
+                                    <div class="Category__listItem--info">
+                                        <h1 class="Category__list-item--title">Truy cùng diệt tận</h1>
+                                        <p class="Category__list-item--detail">Deliver Us from Evil (2021)</p>
+                                    </div>                       
+                                </a>    
+                            </div>
+        
+                        </div>
+                    </div>
+                    <div class="Movies-content">
+                        <div class="Movies_newSeries">
+                            <div class="Movies__wrapper">
+                                <h2 class="Movies__wrapper-title">Phim Lẻ</h2>
+                            </div>
+                            <div class="Movies_newSeries-list">
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/dai-uy-marve-2019.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>                        
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>                        
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                            </div>
+                        </div>
+                        <div class="Movies_newSeris-category hide-on-tablet">
+                            <div class="Movies_newSeris-category__title">Phim Lẻ Hot</div>
+                            <div class="Movies_newSeris-category__list">
+                                <a class="Movies_newSeris-category__listItem">
+                                    <img class="Category__listItem--img" src="./img/imgHomePage/dai-uy-marve-2019.jpg" alt="">
+                                    <div class="Category__listItem--info">
+                                        <h1 class="Category__list-item--title">Truy cùng diệt tận</h1>
+                                        <p class="Category__list-item--detail">Deliver Us from Evil (2021)</p>
+                                    </div>                       
+                                </a>
+                                <a class="Movies_newSeris-category__listItem">
+                                    <img class="Category__listItem--img" src="./img/imgHomePage/dai-uy-marve-2019.jpg" alt="">
+                                    <div class="Category__listItem--info">
+                                        <h1 class="Category__list-item--title">Truy cùng diệt tận</h1>
+                                        <p class="Category__list-item--detail">Deliver Us from Evil (2021)</p>
+                                    </div>                       
+                                </a>
+                                <a class="Movies_newSeris-category__listItem">
+                                    <img class="Category__listItem--img" src="./img/imgHomePage/dai-uy-marve-2019.jpg" alt="">
+                                    <div class="Category__listItem--info">
+                                        <h1 class="Category__list-item--title">Truy cùng diệt tận</h1>
+                                        <p class="Category__list-item--detail">Deliver Us from Evil (2021)</p>
+                                    </div>                       
+                                </a>
+                                <a class="Movies_newSeris-category__listItem">
+                                    <img class="Category__listItem--img" src="./img/imgHomePage/dai-uy-marve-2019.jpg" alt="">
+                                    <div class="Category__listItem--info">
+                                        <h1 class="Category__list-item--title">Truy cùng diệt tận</h1>
+                                        <p class="Category__list-item--detail">Deliver Us from Evil (2021)</p>
+                                    </div>                       
+                                </a>
+                                <a class="Movies_newSeris-category__listItem">
+                                    <img class="Category__listItem--img" src="./img/imgHomePage/dai-uy-marve-2019.jpg" alt="">
+                                    <div class="Category__listItem--info">
+                                        <h1 class="Category__list-item--title">Truy cùng diệt tận</h1>
+                                        <p class="Category__list-item--detail">Deliver Us from Evil (2021)</p>
+                                    </div>                       
+                                </a>
+                                <a class="Movies_newSeris-category__listItem">
+                                    <img class="Category__listItem--img" src="./img/imgHomePage/dai-uy-marve-2019.jpg" alt="">
+                                    <div class="Category__listItem--info">
+                                        <h1 class="Category__list-item--title">Truy cùng diệt tận</h1>
+                                        <p class="Category__list-item--detail">Deliver Us from Evil (2021)</p>
+                                    </div>                       
+                                </a>
+                                <a class="Movies_newSeris-category__listItem">
+                                    <img class="Category__listItem--img" src="./img/imgHomePage/dai-uy-marve-2019.jpg" alt="">
+                                    <div class="Category__listItem--info">
+                                        <h1 class="Category__list-item--title">Truy cùng diệt tận</h1>
+                                        <p class="Category__list-item--detail">Deliver Us from Evil (2021)</p>
+                                    </div>                       
+                                </a>
+                                <a class="Movies_newSeris-category__listItem">
+                                    <img class="Category__listItem--img" src="./img/imgHomePage/dai-uy-marve-2019.jpg" alt="">
+                                    <div class="Category__listItem--info">
+                                        <h1 class="Category__list-item--title">Truy cùng diệt tận</h1>
+                                        <p class="Category__list-item--detail">Deliver Us from Evil (2021)</p>
+                                    </div>                       
+                                </a>
+                                <a class="Movies_newSeris-category__listItem">
+                                    <img class="Category__listItem--img" src="./img/imgHomePage/dai-uy-marve-2019.jpg" alt="">
+                                    <div class="Category__listItem--info">
+                                        <h1 class="Category__list-item--title">Truy cùng diệt tận</h1>
+                                        <p class="Category__list-item--detail">Deliver Us from Evil (2021)</p>
+                                    </div>                       
+                                </a>    
+                            </div>
+        
+                        </div>
+                    </div>
+                    <div class="Movies-content">
+                        <div class="Movies_newSeries">
+                            <div class="Movies__wrapper">
+                                <h2 class="Movies__wrapper-title">Phim Bộ</h2>
+                            </div>
+                            <div class="Movies_newSeries-list">
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/dai-uy-marve-2019.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>                        
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>                        
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Movies-content">
+                        <div class="Movies_newSeries">
+                            <div class="Movies__wrapper">
+                                <h2 class="Movies__wrapper-title">Phim Hoạt Hình</h2>
+                            </div>
+                            <div class="Movies_newSeries-list">
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/dai-uy-marve-2019.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>                        
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>                        
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Movies-content">
+                        <div class="Movies_newSeries">
+                            <div class="Movies__wrapper">
+                                <h2 class="Movies__wrapper-title">Phim Chiếu Rạp</h2>
+                            </div>
+                            <div class="Movies_newSeries-list">
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/dai-uy-marve-2019.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>                        
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>                        
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                                <a href="./FilmDetails.html" class="Movies_newSeries-item mobile-2">
+                                    <div class="Movies_newSeries-item__img" style="background-image: url(https://phimmoiizz.net/wp-content/uploads/2021/04/na-tra-trung-sinh-2.jpg);"></div>
+                                    <div class="Movies_newSeries-item__info">
+                                            <div class="Movies_newSeries-item__title">Bán Đảo Peninsula</div>
+                                            <p class="Movies_newSeries-item__detail">Phim hành động (2021)</p>
+                                    </div>                 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="footer-logo">
+                <a href="#" class="footer-logo__icon">
+                    <div class="fas fa-film"></div>
+                    <span>Film Channel</span>
+                </a>
+            </div>
+            <span class="footer-slogan">Siêu Nhanh - Siêu nét - Siêu chuẩn</span>
+        </footer>
+        <script src="./js/mainHomepage.js"></script>
+    </div>
+</body>
+</html>

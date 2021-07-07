@@ -1,0 +1,141 @@
+@media (max-width: 1024px) {
+  .header__navbar-moviegenre-item {
+    font-size: 18px;
+  }
+  .movie__content-first .movie__content-img {
+    height: 50vh;
+  }
+  .movie__info .movie__info-img img {
+    width: 270px;
+  }
+  .movie__info-details .movie__info-details-title {
+    font-size: 40px;
+  }
+  .movie__content-second iframe {
+    height: 500px;
+  }
+
+  .header-wrap .header__logo {
+    margin-right: 50px;
+  }
+  .app .app_container {
+    margin-top: 60px;
+  }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .header-wrap .header__menu-icon {
+    display: block;
+  }
+  .header .header__moviegenre {
+    display: none;
+  }
+  .header-wrap .header__search {
+    display: none;
+  }
+  .header__search {
+    display: none;
+  }
+  .header__logo {
+    margin-right: 0;
+  }
+  .header .header__navbar {
+    justify-content: center;
+  }
+  .header__navbar .header__menu-icon {
+    display: block;
+  }
+  .movie__content-second iframe {
+    height: 400px;
+  }
+  .movie__content-second h1 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 739px) {
+  .header-wrap .header__logo {
+    margin-right: 0px;
+  }
+  .header-wrap .header__menu-icon {
+    display: block;
+    left: 3%;
+  }
+  .header-wrap .header__search {
+    display: none;
+  }
+  .header .header__moviegenre {
+    display: none;
+  }
+  .header .header__navbar {
+    justify-content: center;
+  }
+  .header__navbar .header__menu-icon {
+    display: block;
+  }
+  .header__navbar .header__navbar-logo {
+    font-size: 26px;
+  }
+  .header__navbar .header__menu-icon i {
+    font-size: 20px;
+  }
+  .app .header {
+    height: 60px;
+  }
+  .header__menu-list .header__menu-item a {
+    font-size: 18px;
+  }
+  .header .header__menu {
+    width: 220px;
+  }
+  .movie__content-first .movie__info {
+    display: block;
+    top: 12%;
+  }
+  .movie__info .movie__info-img img {
+    width: 230px;
+  }
+  .movie__info.movie__info-details {
+    padding-left: 0;
+  }
+  .movie__info-details .movie__info-details-title {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  .movie__info .movie__info-details p {
+    font-size: 14px;
+  }
+  .movie__content-first .movie__content-img {
+    height: 92vh;
+  }
+  .app_container .movie__content-second h1 {
+    font-size: 18px;
+  }
+  .app_container .movie__content-second .movie__content-details {
+    font-size: 15px;
+    line-height: 22px;
+    text-align: justify;
+    padding: 0 5px;
+  }
+  .movie__content-second iframe {
+    height: 250px;
+    padding: 0 5px;
+  }
+  .movie__episode-list .movie__episode-list-item a {
+    margin: 6px 11px;
+    padding: 0 4px;
+  }
+  .movie__suggest .movie__suggest-title {
+    font-size: 18px;
+  }
+  .movie__suggest .movie__suggest-list {
+    display: inline-flex;
+  }
+  .app .footer {
+    height: 70px;
+  }
+  .footer .footer-logo {
+    font-size: 18px;
+  }
+  .footer .footer-slogan {
+    font-size: 15px;
+  }
+}
